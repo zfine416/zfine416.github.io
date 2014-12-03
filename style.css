@@ -131,7 +131,8 @@ display:inline;
 .index-outer p{
 color:white;
 text-align:center;
-margin:auto;
+margin-left:20%;
+margin-right:20%;
 background: rgba(0,0,0,.4);
 
 
