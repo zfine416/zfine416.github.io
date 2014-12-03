@@ -17,6 +17,10 @@ font-weight:bold;
 display:inline;
 }
 
+nav > .nav1{
+	float:left;
+}
+
 #name{
 width:20%;
 margin:auto;
