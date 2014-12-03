@@ -17,12 +17,7 @@ font-weight:bold;
 display:inline;
 }
 
-nav > .nav1{
-	text-align:left;
-}
-nav > .nav2{
-	text-align:right;
-}
+
 #name{
 width:20%;
 margin:auto;
