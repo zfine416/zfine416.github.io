@@ -1,7 +1,7 @@
 /* Basic Style */
 
 nav{
-  display:inline-block;
+  display:inline;
 }
 a:hover{
 font-weight:bold;
