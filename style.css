@@ -1,0 +1,264 @@
+/* Basic Style */
+
+nav{
+  display:inline;
+}
+a:hover{
+font-weight:bold;
+color:#FF9933;
+
+}
+
+#submit{
+color:red;
+font-weight:bold;
+}
+.submitBar{
+display:inline;
+}
+
+#name{
+width:20%;
+margin:auto;
+}
+input {
+	font-size: 2.4em;
+	background-color: transparent;
+	text-align: center;
+	border-width: 0;
+	width: 100%;
+	margin: 0 0 .1em 0;
+	color: #fff;
+}
+.box > label {
+	display: block;
+	font-size: 1em;
+}
+
+.box > button {
+	/* basics */
+	color: #444;
+	background-color: #00FF00;
+	/* rounded corners */
+    -webkit-border-radius: 6px;
+          border-radius: 6px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	font-weight: bold;
+
+}
+
+.box {
+	/* basics */
+	background-color: rgba(0,0,0,.5);
+	color: #00FF00;
+    text-align: center;
+
+	/* rounded corners */
+    -webkit-border-radius: 12px;
+    border-radius: 12px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    padding: .8em .8em 1em;
+    width: 8em;
+	margin: 0 auto;
+	margin-top:200px;
+  	-webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 12px 0px #000;
+  
+}
+table{
+color:white;
+ border-color:white;
+ margin-left:50%;
+ margin-top:10%;
+}
+td{
+vertical-align:bottom;
+}
+
+
+nav img{
+  padding-top:20px;
+  padding-left:20px;
+  border-radius:100px
+}
+.index-outer img{
+  border-radius:100px;
+  border: 7px solid white;
+  margin-left:500px;
+  margin-top: 50px;
+}
+body {
+  color: #333;
+  font-family: Lato, sans-serif;
+  height:800px;
+  background: url("http://www.pentaxforums.com/gallery/images/714/1_PPGimg060.jpg");
+  background-size:cover;
+}
+
+a{
+  padding:25px;
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+ 
+}
+
+nav > ul{
+float: right;
+border: 3px solid white;
+border-radius: 150px;
+  background:rgba(0,0,0,.3);
+    
+}
+
+li{
+display:inline;
+}
+
+.index-outer h1{
+
+  text-align:center;
+  color:white;
+  padding-top:-20px;
+}
+
+.index-outer p{
+color:white;
+text-align:center;
+margin-left:0px;
+
+}
+
+.hockey img{
+  height:275px;
+  border-radius:100px;
+  border: 3px solid white;
+  margin-left:500px;
+  margin-top: 50px;
+}
+.hockey a:hover{
+ color:red;
+
+}
+.container {
+  display: block;
+  width: 400px;
+  margin: 60px auto 0;
+  margin-bottom:100px;
+
+}
+ul.Todo, ul.Completed {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+
+}
+button {
+  background: none;
+  border: 0px;
+  color: white;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: yellow;
+}
+/* Heading */
+h3,
+label[for='new-task'] {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: black;
+
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  width: 318px;
+}
+p > button:hover {
+  color: yellow;;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+  color:black;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: red;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: black;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
