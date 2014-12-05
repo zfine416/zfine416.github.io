@@ -5,8 +5,8 @@ nav{
 }
 a:hover{
 font-weight:bold;
-color:#FF9933;
-text-decoration:teal;
+color:teal;
+text-decoration:none;
 
 }
 
