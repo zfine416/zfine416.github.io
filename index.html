@@ -62,6 +62,17 @@
 
 </div>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-	
+<script>
+$(window).resize(function(){
+	if ($(window).width() <= 300){	
+		$("nav").hide();
+	}	
+});
+$(window).resize(function(){
+	if ($(window).width() > 300){	
+		$("nav").show();
+	}	
+});
+</script>	
 </body>
 </html>
