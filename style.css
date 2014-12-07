@@ -18,7 +18,7 @@
 
 .home{
     background:url("https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10702040_10203063366889397_3523330886446997819_n.jpg?oh=59077e9b19125fa0bd4687b13a3c8554&oe=54FD3956&__gda__=1427470899_e6303aca82b4a54a2ad70a874ddb1061");
-height:600px;
+height:640px;
 background-repeat: no-repeat;
 background-size: cover;
 margin-top:-60px;
@@ -60,7 +60,7 @@ ul li{
 }
 
 .about{
-  height:400px;
+  height:600px;
   border:2px solid black;
   margin-left:-10px;
   margin-right:-10px;
