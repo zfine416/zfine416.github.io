@@ -60,10 +60,11 @@ ul li{
 }
 
 .about{
-  height:800px;
+  height:400px;
   border:2px solid black;
   margin-left:-10px;
   margin-right:-10px;
+  padding-top:60px;
 }
 
 .imgabout{
@@ -85,4 +86,28 @@ h3{
 
 .skills{
   text-align:center;
+}
+
+.contact{
+  background:black;
+  color:white;
+  height:400px;
+  margin-right:-10px;
+  margin-left:-10px;
+  margin-top:-21px;
+  text-align:center;
+}
+.contact h1{
+  font-family: 'Arvo', serif;
+  padding-top:80px;
+} .email{
+  font-size:30px;
+  padding-top:40px;
+}
+.contact
+.linkedin img{
+  height:50px;
+  padding-top:20px;
+  padding-left:20px;
+  padding-top:30px;
 }
