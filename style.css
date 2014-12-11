@@ -103,7 +103,8 @@ h3{
 } 
 .emaillinked{
   float:left;
-  padding-left:20%;
+  padding-left:18%;
+  padding-top:20px;
 }
 .email{
   font-size:30px;
