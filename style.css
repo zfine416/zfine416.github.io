@@ -101,10 +101,12 @@ h3{
   font-family: 'Arvo', serif;
   padding-top:80px;
 } 
+.emaillinked{
+  float:left;
+}
 .email{
   font-size:30px;
   padding-top:40px;
-  float:left;
 }
 .contact
 .linkedin img{
@@ -112,7 +114,6 @@ h3{
   padding-top:20px;
   padding-left:20px;
   padding-top:30px;
-  float:left;
 }
 #overlay{
   background:rgba(0,0,0,.7);
