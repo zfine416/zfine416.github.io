@@ -95,7 +95,7 @@ $("#resume").click(function(event){
   $image.attr("src", imageLocation);
   console.log("step3");
 $overlay.show();
-  var captionText = $(this).attr("alt");
+  var captionText = $(this).children("img").attr("alt");
   console.log("step4");
   $caption.text(captionText);
   console.log("step1");
