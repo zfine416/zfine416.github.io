@@ -57,45 +57,6 @@
 	</div>
 	<a href="photos/Zachary Chase Fine.jpg"><img id = "resume" src = "/photos/Zachary Chase Fine.jpg" alt ="Resume" class="resume" width="300" height="400"></a>
 	</div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-$(window).resize(function(){
-	if ($(window).width() <= 540){	
-		$("nav").hide();
-	}	
-});
-$(window).resize(function(){
-	if ($(window).width() > 540){	
-		$("nav").show();
-	}	
-});
-</script>
-<script>
-	//Problem: User when click on image goes to dead end
-//solution: create an overlay with a large image - Lightbox
-var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img[src=photos/Zachary Chase Fine.jpg]>");
-var $caption = $("<p></p>");
-$overlay.append($image);
 
-$overlay.append($caption); 
-
-$("body").append($overlay);
- $(document).ready(function(){
-
-$(".resume").click(function(event){
-	event.preventDefault();
-	alert("Sorry Under Construction");
-	$overlay.show();
-});}
-  //3.1 Hide the overlay
-</script>
-<script>
-$(document).ready(function(){
-    $( '.expand' ).click(function() {
-        $( '.img_display_content' ).show();
-    });
-});
-</script>
 </body>
 </html>
