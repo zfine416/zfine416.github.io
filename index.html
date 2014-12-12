@@ -86,10 +86,13 @@ $overlay.append($image);
 $overlay.append($caption); 
 
 $("body").append($overlay);
+ $(document).ready(function(){
+
 $(".resume").click(function(event){
 	event.preventDefault();
 	alert("Sorry Under Construction");
-});
+	$overlay.show();
+})};
   //3.1 Hide the overlay
 </script>
 <script>
