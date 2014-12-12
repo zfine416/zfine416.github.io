@@ -89,10 +89,14 @@ $("body").append($overlay);
 //1. Capture the click event on a link to an image
 $("#resume").click(function(event){
   event.preventDefault();
+  console.log("step1");
   var imageLocation = $(this).attr("href");
+  console.log("step2");
   $image.attr("src", imageLocation);
+  console.log("step3");
 $overlay.show();
-  var captionText = $(this).children("img").attr("alt");
+  var captionText = $(this).attr("alt");
+  console.log("step4");
   $caption.text(captionText);
 });
   //1.1 Show the overlay.
