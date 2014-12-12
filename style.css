@@ -100,26 +100,19 @@ h3{
 .contact h1{
   font-family: 'Arvo', serif;
   padding-top:80px;
-} 
-.emaillinked{
-  float:left;
-  text-align:center;
-  padding-top:100px;
-  padding-left:120px;
-}
-.email{
-  font-size:30px;
-  padding-top:40px;
-}
-.contact
-.linkedin img{
-  height:50px;
-  padding-left:20px;
-  padding-top:30px;
 }
 .resume{
   float:right;
   text-align:center;
+  padding-top:10%;
+  padding-right:15%
+}
+.contactinfo{
+  float:left;
+  padding-left:10%;
+}
+.contactinfo img{
+  padding-top:20px;
 }
 #overlay{
   background:rgba(0,0,0,.7);
