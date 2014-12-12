@@ -104,6 +104,8 @@ h3{
 .emaillinked{
   float:left;
   text-align:center;
+  padding-top:50px;
+  padding-left:100px;
 }
 .email{
   font-size:30px;
@@ -112,7 +114,6 @@ h3{
 .contact
 .linkedin img{
   height:50px;
-  padding-top:20px;
   padding-left:20px;
   padding-top:30px;
 }
