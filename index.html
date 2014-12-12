@@ -79,7 +79,7 @@ $(window).resize(function(){
 	//Problem: User when click on image goes to dead end
 //solution: create an overlay with a large image - Lightbox
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
+var $image = $("<img src="photos/Zachary Chase Fine.jpg>");
 var $caption = $("<p></p>");
 $overlay.append($image);
 
@@ -90,10 +90,7 @@ $("body").append($overlay);
 $("#resume").click(function(event){
   event.preventDefault();
   console.log("step1");
-  var imageLocation = $(this).attr("href");
-  console.log("step2");
-  $image.attr("src", imageLocation);
-  console.log("step3");
+  
 $overlay.show();
   var captionText = $(this).children("img").attr("alt");
   console.log("step4");
