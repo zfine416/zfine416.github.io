@@ -87,19 +87,6 @@ $overlay.append($caption);
 
 $("body").append($overlay);
 //1. Capture the click event on a link to an image
-$(document).ready(function(){
-$overlay.show();	
-}
-$("#resume").click(function(event){
-  event.preventDefault();
-  console.log("step1");
-  
-$overlay.show();
-  var captionText = $(this).children("img").attr("alt");
-  console.log("step4");
-  $caption.text(captionText);
-  console.log("step1");
-});
   //1.1 Show the overlay.
   //1.2 Update overlay with the image linked in the link
   //1.3 get childs alt attribute and set caption
