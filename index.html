@@ -87,6 +87,9 @@ $overlay.append($caption);
 
 $("body").append($overlay);
 //1. Capture the click event on a link to an image
+$(document).ready(function(){
+$overlay.show();	
+}
 $("#resume").click(function(event){
   event.preventDefault();
   console.log("step1");
