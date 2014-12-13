@@ -71,21 +71,32 @@ $(window).resize(function(){
 });
 </script>
 <script>
-	//Problem: User when click on image goes to dead end
-//solution: create an overlay with a large image - Lightbox
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img[src=photos/Zachary Chase Fine.jpg]>");
+var $image = $("<img>");
 var $caption = $("<p></p>");
 $overlay.append($image);
 
 $overlay.append($caption); 
 
 $("body").append($overlay);
-
+//1. Capture the click event on a link to an image
 $("#resume").click(function(event){
-	event.preventDefault();
-	alert("Sorry Under Construction");
-	$overlay.show();
+  event.preventDefault();
+  var imageLocation = $(this).attr("href");
+  $image.attr("src", imageLocation);
+$overlay.show();
+  var captionText = $(this).children("img").attr("alt");
+  $caption.text(captionText);
+});
+  //1.1 Show the overlay.
+  //1.2 Update overlay with the image linked in the link
+  //1.3 get childs alt attribute and set caption
+//2. Add overlay
+  //2.1 An image
+  //2.2 A caption
+//3. When overlay is clicked 
+$overlay.click(function(){
+  $(this).hide();
 });
 </script>
 </body>
