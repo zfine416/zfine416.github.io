@@ -144,3 +144,13 @@ h3{
 #overlay p{
   color:white;
 }
+@media (min-width: 320px) and (max-width:568px){
+  #menu ul{
+  display:none;
+  }
+}
+@media (min-width:568px) {
+#menu select, #menu button {
+  display:none;
+  }
+}
