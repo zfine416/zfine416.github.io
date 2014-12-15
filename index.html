@@ -105,5 +105,28 @@ $overlay.click(function(){
   $(this).hide();
 });
 </script>
+<script>
+	var $select= $("<select></select>");
+$("nav").append($select);
+//Cyle over menu link 
+$("nav a").each(function(){
+ var $anchor = $(this);
+ var $option = $("<option></option");
+  $option.val($anchor.attr("href"));
+  $option.text($anchor.text());
+  $select.append($option);
+  
+});
+  //CREATE an option
+  //OPTION VALUE IS THE HREF  
+  //options text is the text of link
+  //append option to select
+//create button
+var $button = $("<button>Go</button>");
+$("nav").append($button);
+$button.click(function(){
+  window.location = $select.val();
+});
+</script>
 </body>
 </html>
