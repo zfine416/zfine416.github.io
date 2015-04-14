@@ -1,121 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
-<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <title>Zachary Fine | Web Developer</title>
+  <link rel="stylesheet" type="text/css" href="style.scss">
+  
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" scr="app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<title>Zachary Fine | Frontend Developer | Digital Marketer</title>
-<meta name = "description" content="Zachary Fine. New York City Frontend Developer and Digital Marketer">
-<meta name=viewport content='width=700'>
 </head>
 <body>
-<div class = "sidebar">
-</div>
-<nav class = "main-nav">
-	<ul>
-		<li><a href="#home">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#resume">Resume</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-</nav>
-<div id="home" class ="home">
-<h1>Zachary Fine</h1>
-<h2>Front End Developer | Digital Marketer</h2>
-<center><img src = "https://scontent-b-ord.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10590414_10203129393580023_2755316873707198404_n.jpg?oh=e3e1487cfa5b2f2e378d1a3cff487155&oe=5515273A" height="200" width="200"></center>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-top="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div> -->
+  <div class="parallax-container">
+    <h1 class="title">Zachary Fine | Web Developer</h1>
+    <img class="mainimg" src="images/mikefine.jpg" height="10"></div>
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="aboutme">
+        <i class="fa fa-user fa-2x"></i> <span class="about">About Me</span>
+      </div>
+      <p>
+        Hi!!! My name is Zachary Fine. I am a Web Developer living in Brooklyn, NY. I recently received my BS from Indiana University in Informatics and Computing. I love making websites look awesome!!!
+      </p>
+    </div>
+    <img src="images/me.jpg" height="400" width="600">
+  </div>
 
-</div>
-<div id="about" class="about">
-	<div class = "imgabout">
-	<img src ="http://html5beginners.com/wp-content/uploads/2014/09/js.png">
-	</div>
-	<div class = "aboutme">
-	<h1>About Me</h1>
-	<p>Hi there!!! I am a Frontend Developer and Digital Marketer in the New York City area. Making websites look awesome has always been a passion of mine. 
-	</p>
-	<p>
-	I wear several different hats. In the past I have been very successful in helping small businesses gain attention on the World Wide Web. At Minyanville I was able to get the site to #1 on Google Finance. Additionally I am currently taking night courses at General Assembly in Digital Marketing.
-	</p>
-	<h3>Skills:</h3>
-		<ul class = "skills">
-		<li>HTML5</li>
-		<li>CSS3</li>
-		<li>JavaScript</li>
-		<li>JQuery</li>
-		<li>Microsoft Excel</li>
-		<li>SQL</li>
-		<li>PHP</li>
-		<li>Google Analytics</li>
-		
-		</ul>
-	</div>
-</div>
-<div id="resume" class="resume">
-<h1>My Resume</h1>
-<a href="photos/Zachary Chase Fine.jpg" id="resumezcf"><img id = "resume_photo" src = "/photos/Zachary Chase Fine.jpg" alt ="ZFine | Resume" class="resume_photo" width="300" height="400"></a>	
-<h3>Click To Enhance</h3>
-	
-</div>
-<div id="contact" class="contact">
-	<h1>Contact</h1>
-	<div class = "contactinfo"></div>
-	email: <a href="mailto:zfine416@gmail.com">zfine416@gmail.com</a>
-	<br>
-	<a href ="https://www.linkedin.com/in/zacharyfine"><img src="http://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" height="50"></a>
-	</div>
-</div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
-var $caption = $("<p></p>");
-$overlay.append($image);
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="social-buttons"><a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a><a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a><a href="#" class="social-button google"><i class="fa fa-google"></i></a><a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a><a href="#" class="social-button skype"><i class="fa fa-skype"></i></a>
+          </div>
 
-$overlay.append($caption); 
-
-$("body").append($overlay);
-//1. Capture the click event on a link to an image
-$("#resumezcf").click(function(event){
-  event.preventDefault();
-  var imageLocation = $(this).attr("href");
-  $image.attr("src", imageLocation);
-$overlay.show();
-  var captionText = $(this).children("img").attr("alt");
-  $caption.text(captionText);
-});
-  //1.1 Show the overlay.
-  //1.2 Update overlay with the image linked in the link
-  //1.3 get childs alt attribute and set caption
-//2. Add overlay
-  //2.1 An image
-  //2.2 A caption
-//3. When overlay is clicked 
-$overlay.click(function(){
-  $(this).hide();
-});
-</script>
-<script>
-	var $select= $("<select></select>");
-$("nav").append($select);
-//Cyle over menu link 
-$("nav a").each(function(){
- var $anchor = $(this);
- var $option = $("<option></option");
-  $option.val($anchor.attr("href"));
-  $option.text($anchor.text());
-  $select.append($option);
-  
-});
-  //CREATE an option
-  //OPTION VALUE IS THE HREF  
-  //options text is the text of link
-  //append option to select
-//create button
-var $button = $("<button>Go</button>");
-$("nav").append($button);
-$button.click(function(){
-  window.location = $select.val();
-});
-</script>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
