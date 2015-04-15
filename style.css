@@ -26,8 +26,16 @@ nav{
   overflow: auto;
 }
 .me{
-  float: right;
-  margin-right: 1em;
+  border:2px solid black;
+  border-radius: 10px;
+  margin-left: 1em;
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+  .me{
+    width: 460px;
+  }
 }
 .aboutme{
   text-align: center;
