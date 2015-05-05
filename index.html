@@ -23,6 +23,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/greentie.ico">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -71,7 +72,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                 </ul>
             </div>
@@ -157,16 +158,18 @@
             </div>
         </div>
     </section>
-<!--     <section class="skills" id="skills">
-    <h1>Skills</h1>
-      <ul class="skills">
-          <li class="skill" aria-label="advanced">JavaScript</li>
-          <li class="skill" aria-label="novice">Computer Hacking</li>
-          <li class="skill" aria-label="pro">Masculinity</li>
-          <li class="skill" aria-label="average">Attractiveness</li>
-          <li class="skill" aria-label="l33tasuar">Making skills bars with SASS</li>
-      </ul>  
-  </section> -->
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="chart" data-percent="90"><p>HTML5</p></div>
+      <div class="chart" data-percent="75"><p>CSS3</p></div>
+      <div class="chart" data-percent="65"><p>JavaScript</p></div>
+      <div class="chart" data-percent="55"><p>jQuery</p></div>
+      <br>
+      <div class="chart" data-percent="80"><p>psql</p></div>
+      <div class="chart" data-percent="25"><p>BackboneJS</p></div>
+      <div class="chart" data-percent="50"><p>Ruby on Rails</p></div>
+      <div class="chart" data-percent="75"><p>SaaS</p></div>
+  </div>
 
 
   <!-- Footer -->
@@ -175,23 +178,23 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col col-md-4">
-                            <h3>Contact</h3>
-                          <p>zfine416@gmail.com</p>
-                      </div>
-                      <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/zack.fine" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/114915217430564531121/posts" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/zacharyfine" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <h3>Contact</h3>
+                    <p>zfine416@gmail.com</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/zack.fine" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/114915217430564531121/posts" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/zacharyfine" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
                        <!--  <div class="footer-col col-md-4">
                             <h3>About Freelancer</h3>
                             <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
@@ -316,6 +319,31 @@
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- waypoint -->
+        <script src="noframework.waypoints.min.js"></script>
+
+        <!-- easy-pie-chart -->
+        <script src="jquery.easypiechart.min.js"></script>
+
+        <script type="text/javascript">
+            var waypoint = new Waypoint({
+              element: document.getElementById('about'),
+              handler: function() {
+                $(function() {
+                  $('.chart').easyPieChart({
+                    scaleColor: "#ecf0f1",
+                    lineWidth: 20,
+                    lineCap: 'butt',
+                    barColor: '#1abc9c',
+                    trackColor: "#ecf0f1",
+                    size: 160,
+                    animate: 4000
+                });
+              });
+            }
+        })
+        </script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="bootstrap.min.js"></script>

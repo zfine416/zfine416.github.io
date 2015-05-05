@@ -482,3 +482,42 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background: #13171b;
+  color: white;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 30px;
+}
+
+.skills {
+  text-align: center;
+  height: 100vh;
+  padding-top: 3.8em;
+  margin-bottom: 10px;
+}
+
+.skills h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+  color: #999;
+  font-size: 18px;
+  text-align: center;
+
+
+}
+.chart canvas {
+  
+}
