@@ -88,10 +88,10 @@ header {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
- .header{
+   .header{
     height: 600px;
     background-color: skyblue;
- }
+}
 }
 
 header .container {
@@ -224,15 +224,37 @@ section.success a.active {
 }
 
 #portfolio .portfolio-item {
-    right: 0;
+    /*right: 0;*/
     margin: 0 0 15px;
+
+}
+
+#portfolio{
+    height: 100vh;
 }
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
-    margin: 0 auto;
+    /*    margin: 0 auto;*/
     max-width: 400px;
+    overflow: auto;
+}
+.center{
+    width: 160px;
+    position: absolute;
+    left: 30%;
+}
+
+.left{
+    position: absolute;
+    left: 12%;
+}
+
+.right{
+    position: absolute;
+    right:12%;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -519,5 +541,5 @@ body {
   text-align: center;
 }
 .chart canvas {
-  
+
 }
