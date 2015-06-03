@@ -257,6 +257,11 @@ section.success a.active {
 
 }
 
+.resume{
+    text-decoration: none;
+    color: #18bc9c;
+    font-size: 20px;
+}
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
