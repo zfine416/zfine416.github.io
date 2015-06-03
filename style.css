@@ -262,6 +262,16 @@ section.success a.active {
     color: #18bc9c;
     font-size: 20px;
 }
+
+.resume:hover{
+    color: white;
+    transition: color 2s;
+}
+
+.email:hover{
+    color: white;
+    transition: color 2s;
+}
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
