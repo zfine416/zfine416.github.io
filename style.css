@@ -322,8 +322,9 @@ section.success a.active {
 }
 
 .me{
-    height: 40vh;
-    border-radius: 8em;
+    height: 50;
+    width: 60vh;
+    border-radius: 5px;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
