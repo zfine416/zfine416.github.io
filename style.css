@@ -220,6 +220,14 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
+    .skills{
+        padding-top: 900px;
+        padding-bottom: 1800px;
+    }
+
+    .me{
+        padding-right: 50px;
+    }
 }
 
 #portfolio .portfolio-item {
