@@ -582,7 +582,7 @@ body {
 
 .skills {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 3.8em;
   margin-bottom: 10px;
 }
