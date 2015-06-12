@@ -264,6 +264,7 @@ section.success a.active {
     color: #fff;
 }
 
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
@@ -293,11 +294,14 @@ section.success a.active {
     max-width: 500px;
 }
 
-.right{
-
-
+.snake{
+    color: white;
+    font-size:1.5em;
 }
 
+.snake:hover{
+    text-decoration: none;
+}
 .resume{
     text-decoration: none;
     color: #18bc9c;
