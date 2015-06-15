@@ -3,7 +3,7 @@ canvas{
 	position: absolute;
 	border: 1px solid black;
 	margin: 0 auto;
-	top: calc(50% - 261);
+	top: calc(50% - 261px);
 	right: 0;
 	left: 0;
 }
