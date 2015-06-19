@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin:0;
+	border: 0;
+}
+
+.main{
+	text-align: center;
+	background: blue;
+	color: yellow;
+	height: 60px;
+	position: relative;
+}
+.main p{
+	position: absolute;
+	top: calc(50% - 18.5px);
+	left: calc(50% - 218px);
+}
+
+#car img{
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.slick-prev{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+}
+
+.slick-next{
+	position: absolute;
+	top: 50%;
+	right: 25%;
+}
