@@ -1,9 +1,7 @@
 $.ajax({
   url: 'gallery_json.js',
   dataType: 'json',
-  success: dataLog(data)
+  success: function(data){
+  	console.log(data[0]);
+  }
 });
-
-function dataLog(data){
-	console.log(data);
-}
