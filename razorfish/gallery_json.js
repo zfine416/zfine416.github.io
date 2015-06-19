@@ -31,7 +31,7 @@
       "id":"4",
       "url":"test_images/image_4.jpg",
       "thumb_url":"test_images/thumb_4.jpg",
-      "title";"Next Generation Chipsets",
+      "title":"Next Generation Chipsets",
       "date":"August 1, 2013",
       "location":"New York, New York"
     },
