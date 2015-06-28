@@ -83,6 +83,7 @@ header {
     height: 100vh;
     background-size: 100% 100%;
     max-width: 100%;
+    background-attachment: fixed;
 }
 
 @media only screen 
