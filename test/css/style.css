@@ -1,3 +1,8 @@
+ @font-face {
+    font-family: Mistral;
+    src: url(Mistral.ttf);
+}
+
  *{
  	margin: 0;
  	border: 0;
@@ -34,28 +39,28 @@
 
 /*headers*/
  h1{
- 	font-family: 'Kaushan Script', cursive;
- 	font-size: 48px;
+ 	font-family: Mistral;
+ 	font-size: 72px;
  	z-index: 1;
  	text-shadow: 2px 2px #016197;
  }
  .name{
  	position: absolute;
- 	right: calc(33.3333% - 130.5px);
+ 	right: calc(25% - 130.5px);
  	/*150-(70/2)=115*/
  	top: 115px;
  }
 
  .position{
  	position: absolute;
- 	left: calc(33.3333% - 201px);
+ 	left: calc(25% - 201px);
  	/*450-(70/2)=415*/
  	top: 415px;
  	color: hotpink;
  }
 /*parallax photo*/
  .night{
- 	background-image: url("../photos/michael-fine.jpg");
+ 	background-image: url("../photos/la.jpg");
  	background-attachment: fixed;
  	background-size: cover;
  	width: 100%;
@@ -64,6 +69,25 @@
 
  /*about me*/
  .about{
- 	height: 900px;
- 	background: #016197;
+ 	height: 600px;
+ 	background: #000;
+ 	transition: all 3s ease;
+ 	position: relative;
+ 	border: 3px solid hotpink;
  }
+
+ .about:hover{
+ 	border: 20px solid hotpink;
+ }
+
+/* .circle{
+ 	background: hotpink;
+ 	height: 100px;
+ 	width: 100px;
+ 	border-radius: 50%;
+ 	position: absolute;
+ 	top: calc(50% - 50px);
+ 	left: calc(50% - 50px);
+
+ }*/
+
