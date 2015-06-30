@@ -13,11 +13,11 @@ $( document ).ready(function() {
 	centerImage(halfMe);
 });
 
-$(window).scroll(function() {
-	console.log("scrolling");
-	var meWidth = $me.width()*.371;
-	leftGlasses(meWidth);
-});
+// $(window).scroll(function() {
+// 	console.log("scrolling");
+// 	var meWidth = $me.width()*.371;
+// 	leftGlasses(meWidth);
+// });
 
 //function that sets triangle to window width
 function makeTriangle(width){
