@@ -1,6 +1,8 @@
 console.log("loaded");
 var $me = $('.about .me');
 var $glasses = $('.about .glasses');
+var halfMe = $me.height()/2;
+console.log(halfMe);
 
 
 // var pink = (width) + "px solid hotpink";
@@ -9,9 +11,6 @@ var $glasses = $('.about .glasses');
 $( document ).ready(function() {
 	var width = $(window).width();
 	makeTriangle(width);
-	var halfMe = $me.height()/2;
-	debugger;
-	console.log(halfMe);
 	centerImage(halfMe);
 });
 
