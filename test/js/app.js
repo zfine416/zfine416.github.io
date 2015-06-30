@@ -42,7 +42,7 @@ $( window ).resize(function() {
 
 function centerImage(halfMe){
 	var half = "calc(50% - " + halfMe + "px)";
-	console.log(this);
+	console.log(halfMe);
 	$me.css('top', half);
 	console.log(half);
 }
