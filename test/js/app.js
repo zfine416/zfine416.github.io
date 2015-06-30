@@ -10,6 +10,7 @@ $( document ).ready(function() {
 	var width = $(window).width();
 	makeTriangle(width);
 	var halfMe = $me.height()/2;
+	debugger;
 	console.log(halfMe);
 	centerImage(halfMe);
 });
@@ -43,7 +44,6 @@ $( window ).resize(function() {
 
 function centerImage(halfMe){
 	var half = "calc(50% - " + halfMe + "px)";
-	console.log(halfMe);
 	$me.css('top', half);
 	console.log(half);
 }
