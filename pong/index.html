@@ -1,7 +1,10 @@
+<!-- Id: v242833; -->
+<!-- 2123648200 -->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript Pong Game</title>
+	<title>JavaScript Ice Hockey Pong</title>
 	<link rel="stylesheet" type="text/css" href="pong.css">
 </head>
 <body>
@@ -36,7 +39,7 @@
 
 		update: function(){
 			var dest = ball.y - (this.height - ball.side)/2;
-			this.y += (dest - this.y)*0.05;
+			this.y += (dest - this.y)*0.15;
 			this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0)
 		},
 		draw: function(){ctx.fillRect(this.x, this.y, this.width, this.height)
@@ -115,7 +118,6 @@
 		document.addEventListener("keyup", function(evt){
 			delete keystate[evt.keyCode];
 		})
-
 
 		init();
 
