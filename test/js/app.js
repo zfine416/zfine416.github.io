@@ -10,6 +10,7 @@ $( document ).ready(function() {
 	var width = $(window).width();
 	makeTriangle(width);
 	var halfMe = $me.height()/2;
+	console.log(halfMe);
 	centerImage(halfMe);
 });
 
