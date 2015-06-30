@@ -18,8 +18,8 @@ $(window).scroll(function() {
 	console.log(halfMe);
 	centerImage(halfMe);
 	// console.log("scrolling");
-	// var meWidth = $me.width()*.371;
-	// leftGlasses(meWidth);
+	var meWidth = $me.width()*.371;
+	leftGlasses(meWidth);
 });
 
 //function that sets triangle to window width
