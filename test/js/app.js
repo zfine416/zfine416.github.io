@@ -1,8 +1,7 @@
 console.log("loaded");
 var $me = $('.about .me');
 var $glasses = $('.about .glasses');
-var halfMe = $me.height()/2;
-console.log(halfMe);
+
 
 
 // var pink = (width) + "px solid hotpink";
@@ -11,14 +10,17 @@ console.log(halfMe);
 $( document ).ready(function() {
 	var width = $(window).width();
 	makeTriangle(width);
-	centerImage(halfMe);
+	
 });
 
-// $(window).scroll(function() {
-// 	console.log("scrolling");
-// 	var meWidth = $me.width()*.371;
-// 	leftGlasses(meWidth);
-// });
+$(window).scroll(function() {
+	var halfMe = $me.height()/2;
+	console.log(halfMe);
+	centerImage(halfMe);
+	// console.log("scrolling");
+	var meWidth = $me.width()*.371;
+	leftGlasses(meWidth);
+});
 
 //function that sets triangle to window width
 function makeTriangle(width){
