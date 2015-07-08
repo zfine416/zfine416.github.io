@@ -13,14 +13,7 @@ $( document ).ready(function() {
 	
 });
 
-$(window).scroll(function() {
-	var halfMe = $me.height()/2;
-	console.log(halfMe);
-	centerImage(halfMe);
-	// console.log("scrolling");
-	var meWidth = $me.width()*.371;
-	leftGlasses(meWidth);
-});
+
 
 //function that sets triangle to window width
 function makeTriangle(width){
@@ -34,26 +27,21 @@ function makeTriangle(width){
 $( window ).resize(function() {
 	var width = $(window).width();
 	makeTriangle(width);
-	var halfMe = $me.height()/2;
-	centerImage(halfMe);
-	var meWidth = $me.width()*.371;
-	leftGlasses(meWidth);
-	console.log(meWidth); 
 });
 
 //center image
 
-function centerImage(halfMe){
-	var half = "calc(50% - " + halfMe + "px)";
-	$me.css('top', half);
-	console.log(half);
-}
+// function centerImage(halfMe){
+// 	var half = "calc(50% - " + halfMe + "px)";
+// 	$me.css('top', half);
+// 	console.log(half);
+// }
 
 //glasses left att equals image width - pixels
 //37.1% of $me.width
 
-function leftGlasses(meWidth){
-	var pix = meWidth + "px";
-	console.log(pix);
-	$glasses.css('left', pix);
-}
+// function leftGlasses(meWidth){
+// 	var pix = meWidth + "px";
+// 	console.log(pix);
+// 	$glasses.css('left', pix);
+// }
