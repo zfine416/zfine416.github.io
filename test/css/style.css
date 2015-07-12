@@ -103,10 +103,11 @@
 
  .about .glasses{
  		position: absolute;
- 		top: 305.5px;
+ 		/*top: 305.5px;*/
  		left: 207px;
  		z-index: 1;
  		width:85px;
+ 		top: 66.25%;
  		/*max-width: 7.817337461*/
 
  	}
