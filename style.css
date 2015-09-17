@@ -78,7 +78,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: linear-gradient(#18bc9c, #2c3e50); 
+    /*background:/* linear-gradient(#18bc9c, #2c3e50);*/ 
+    background-image: url(http://www.drodd.com/images10/background-images15.jpg);
     width: 100%;
     height: 100vh;
     background-size: 100% 100%;
