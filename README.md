@@ -3,4 +3,4 @@ Zachary Fine | Front End Developer
 
 Updated projects on index.html page
 
-test git
+testing git repo on new cpu
