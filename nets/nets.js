@@ -16,6 +16,6 @@ if (request){
     request.onload = function() {
         console.log('hello');
     };
-    request.onreadystatechange = handler;
+    // request.onreadystatechange = handler;
     request.send();
 }
