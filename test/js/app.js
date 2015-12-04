@@ -9,8 +9,7 @@ var $glasses = $('.about .glasses');
 
 $( document ).ready(function() {
 	var width = $(window).width();
-	makeTriangle(width);
-	
+	makeTriangle(width);	
 });
 
 
