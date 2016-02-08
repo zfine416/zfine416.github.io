@@ -9,7 +9,6 @@
 	background-image: url(building-red.jpg);
 	width: 100%;
 	height: 100%;
-	background-repeat: none;
 	z-index: 1;
 	background-attachment: fixed;
 }
@@ -18,7 +17,22 @@
 	background-image: url(building-purple.jpg);
 	width: 100%;
 	height: 100%;
-	background-repeat: none;
+	z-index: 1;
+	background-attachment: fixed;
+}
+
+.image3{
+	background-image: url(building-blue.jpg);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-attachment: fixed;
+}
+
+.image4{
+	background-image: url(building-yellow.jpg);
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 	background-attachment: fixed;
 }

@@ -31,13 +31,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-62518193-1', 'auto');
-          ga('send', 'pageview');
+      ga('create', 'UA-62518193-1', 'auto');
+      ga('send', 'pageview');
 
       </script>
 
@@ -91,10 +91,11 @@
                         <span class="skills">Angular | Ruby on Rails | Node.js</span>
                         <br>
                         <span class="skills">Web Developer</span
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </header>
 
     <!-- Portfolio Grid Section -->
@@ -118,7 +119,7 @@
                         </div>
                         <img src="images/dogitz-home.png" class="img-responsive" alt="">
                     </a>
-                    <div class="center">(Click to learn more)</div>
+                    <div class="center">(Click to Learn More)</div>
                 </div>
                 <div class="col-sm-6 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
@@ -131,13 +132,37 @@
                         </div>
                         <img src="images/stockhome.png" class="img-responsive" alt="">
                     </a>
-                    <div class="center">(Click to learn more)</div>
+                    <div class="center">(Click to Learn More)</div>
                 </div>
             </div>
-            <h3>Javascript Canvas Games</h3>
-            <a class='snake' href="/snake">Play Snake</a>
-            <br>
-            <a class='snake' href="/pong">Play Ice Hockey Pong</a>
+            <div class="row">
+                <div class="col-sm-6 portfolio-item">
+                    <a href="http://zacharyfine.space/pong/" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                Ice Hockey Pong
+                                <br>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/icehockey.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="center">Click to Play!</div>
+                </div>
+                <div class="col-sm-6 portfolio-item">
+                    <a href="http://zacharyfine.space/snake" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                Snake
+                                <br>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/snakeone.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="center">Click to Play!</div>
+                </div>              
+            </div>
         </div>
     </section>
 
@@ -151,10 +176,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <img class="me" src="images/me.jpg" alt="">
                 </div>
-                <div class="col-md-6 about">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5 about">
                     Hi!! My name is Zachary Fine. I am a Full-Stack Web Developer living in Brooklyn, NY. I recently received my BS from Indiana University in Informatics and Computing and minored in Computer Science and Business. Aside from building awesome websites, I am a math whiz, avid hockey fan and musician. 
                 </div>
 
@@ -166,16 +193,16 @@
           <h2>Skills</h2>
           <!-- <div class="row"> -->
 
-              <div class="chart" data-percent="95"><p>HTML5</p></div>
-              <div class="chart" data-percent="96"><p>CSS3</p></div>
-              <div class="chart" data-percent="98"><p>Javascript/JQuery</p></div>
-              <div class="chart" data-percent="90"><p>Angular</p></div>
-              <br>
-              <div class="chart" data-percent="85"><p>Ruby on Rails</p></div>
-              <div class="chart" data-percent="65"><p>Node.js</p></div>
-              <div class="chart" data-percent="85"><p>SQL</p></div>
-              <div class="chart" data-percent="90"><p>D3.js</p></div>
-              
+          <div class="chart" data-percent="95"><p>HTML5</p></div>
+          <div class="chart" data-percent="96"><p>CSS3</p></div>
+          <div class="chart" data-percent="98"><p>Javascript/JQuery</p></div>
+          <div class="chart" data-percent="90"><p>Angular</p></div>
+          <br>
+          <div class="chart" data-percent="85"><p>Ruby on Rails</p></div>
+          <div class="chart" data-percent="65"><p>Node.js</p></div>
+          <div class="chart" data-percent="85"><p>SQL</p></div>
+          <div class="chart" data-percent="90"><p>D3.js</p></div>
+
           <!-- </div> -->
       </div>
   </div>
@@ -250,11 +277,11 @@
                         <img src="images/dogitz-show.png" height="400" width="700" alt="">
                         <p>Dogitz is a Ruby on Rails application that allows users to upload photos of their dogs and then like and comment on other users photos. Photos are ranked my most liked<br><br>
                           Technologies Used: Ruby on Rails, Javascript/jQuery, Heroku, User Authentication, Paperclip Gem, email confirmation, AJAX, Bootstrap, Sass and HTML5/CSS3</p>
-                                  <ul class="list-inline item-details">
-                                    <li>Client:
-                                        <strong><a href="http://www.dogitz.com/posts/alltime">Launch Dogitz</a>
-                                        </strong>
-                                    </li>
+                          <ul class="list-inline item-details">
+                            <li>Client:
+                                <strong><a href="http://www.dogitz.com/posts/alltime">Launch Dogitz</a>
+                                </strong>
+                            </li>
                                    <!--  <li>Date:
                                         <strong><a href="http://startbootstrap.com">April 2014</a>
                                         </strong>
@@ -271,46 +298,32 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                            </div>
-                        </div>
-                    </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>StockTweets</h2>
-                                <hr class="star-primary">
-                                <img src="images/stocktweets.png" class="img-responsive img-centered" alt="" height="400" width="700">
-                                <p>StockTweets allows a user to search a stock based on its ticker symbol and then returns a word cloud based on the most trending words related to that stock. Additionally StockTweets provides users with current information related to that stock. <br><br>
-                                    Technologies Used: Ruby on Rails, Javascript/jQuery, Yahoo Finance Gem, Twitter API, HTML5/CSS3, Sass and Authentication, Bootstrap  </p>
-                                    <ul class="list-inline item-details">
-                                        <li>
-                                            <strong><a href="http://sleepy-wave-9982.herokuapp.com">StockTweets Heroku Website</a>
-                                            </strong>
-                                        </li>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>StockTweets</h2>
+                        <hr class="star-primary">
+                        <img src="images/stocktweets.png" class="img-responsive img-centered" alt="" height="400" width="700">
+                        <p>
+                            StockTweets allows a user to search a stock based on its ticker symbol and then returns a word cloud based on the most trending words related to that stock. Additionally StockTweets provides users with current information related to that stock. <br><br>
+                            Technologies Used: Ruby on Rails, Javascript/jQuery, Yahoo Finance Gem, Twitter API, HTML5/CSS3, Sass and Authentication, Bootstrap
+                        </p>
+                        <ul class="list-inline item-details">
+                            <li>
+                                <strong><a href="http://sleepy-wave-9982.herokuapp.com">StockTweets Heroku Website</a>
+                                </strong>
+                            </li>
                                    <!--  <li>Date:
                                         <strong><a href="http://startbootstrap.com">April 2014</a>
                                         </strong>
@@ -327,55 +340,57 @@
                 </div>
             </div>
         </div>
+    </diV>
+</div>
 
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <!-- stellar parallax-->
-        <script src="jquery.stellar.min.js"></script>
-        <script>$.stellar();</script>
-        <!-- waypoint -->
-        <script src="noframework.waypoints.min.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- stellar parallax-->
+<script src="jquery.stellar.min.js"></script>
+<script>$.stellar();</script>
+<!-- waypoint -->
+<script src="noframework.waypoints.min.js"></script>
 
-        <!-- easy-pie-chart -->
-        <script src="jquery.easypiechart.min.js"></script>
+<!-- easy-pie-chart -->
+<script src="jquery.easypiechart.min.js"></script>
 
-        <script type="text/javascript">
-            var waypoint = new Waypoint({
-              element: document.getElementById('about'),
-              handler: function() {
-                $(function() {
-                  $('.chart').easyPieChart({
-                    scaleColor: "#ecf0f1",
-                    lineWidth: 20,
-                    lineCap: 'butt',
-                    barColor: '#1abc9c',
-                    trackColor: "#ecf0f1",
-                    size: 160,
-                    animate: 4000
-                });
-              });
-            }
-        })
-        </script>
+<script type="text/javascript">
+var waypoint = new Waypoint({
+  element: document.getElementById('about'),
+  handler: function() {
+    $(function() {
+      $('.chart').easyPieChart({
+        scaleColor: "#ecf0f1",
+        lineWidth: 20,
+        lineCap: 'butt',
+        barColor: '#1abc9c',
+        trackColor: "#ecf0f1",
+        size: 160,
+        animate: 4000
+    });
+  });
+}
+})
+</script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="class.js"></script>
-        <script src="cbpAnimatedHeader.js"></script>
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="class.js"></script>
+<script src="cbpAnimatedHeader.js"></script>
 
-        <!-- Contact Form JavaScript -->
-        <script src="js/jqBootstrapValidation.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
 
-        <!-- Masonry Grid -->
-        <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<!-- Masonry Grid -->
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
-        <!-- Custom Theme JavaScript -->
-        <script src="app.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="app.js"></script>
 
-    </body>
+</body>
 
-    </html>
+</html>
