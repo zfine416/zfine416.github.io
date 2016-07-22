@@ -1,3 +1,28 @@
+/*testing for new about section*/
+#new-about {
+    background:#000;
+    height: 100vh;
+    position: fixed;
+    top: 300px;
+    left: 0;
+}
+
+.mini-white-circle {
+    height:25%;
+    background: #FFF;
+    border-radius: 50%;
+    z-index:1;
+}
+
+.white-circle {
+    height: 95%;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+
+
+
 body {
     overflow-x: hidden;
 }
