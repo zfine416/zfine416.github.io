@@ -1,0 +1,197 @@
+@font-face {
+	font-family: redsox;
+	src: url("./MLBTUSCA.TTF");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: 0;
+}
+
+body {
+	background: #457a72;
+}
+
+.header {
+	font-family: redsox;
+	font-size: 4em;
+	color: #C60C30;
+	background: #002244;
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	padding: .5em;
+}
+
+/*----------scoreboard-----------*/
+
+.scoreboard-content {
+	height: 65px;
+	position: relative;
+	background: #f1f2f3;
+	display: flex;
+	border-bottom: 1px solid #a5a6a7; 
+}
+
+.scoreboard-menu {
+	color: #48494a;
+	font-size: 1.2em;
+	min-width: 120px;
+	border-right: 1px solid #a5a6a7;
+	text-align: center;
+	line-height: 65px;
+}
+
+.scores-date-pick {
+	min-width: 120px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:0px !important; 
+    padding-bottom:0 !important;
+    height: 65px;
+    font-size: 1em;
+    line-height: 65px;
+}
+.navbar {
+	min-height:65px !important;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+	border-right: 1px solid #a5a6a7; 
+}
+
+.mlb-carousel {
+	font-size: 1em;
+	position: relative;
+	float: left;
+	text-decoration: none;
+}
+
+
+.active-date {
+	height: 64px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	left: 90px;
+}
+
+.competitors{
+	display: flex;
+	flex-direction: column;
+}
+
+.mlb-game {
+	width: 160px;
+	background: #FFF;
+	font-family: sans-serif;
+	border-right: 1px solid #a5a6a7; 
+}
+
+.mlb-game a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mlb-carousel ul {
+	list-style-type: none;
+}
+
+.away-team, .home-team, .score-overview{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*------------FENWAY BOARD--------------*/
+
+.fenway-board {
+	display: flex;
+	justify-content: space-between;
+	background: #585439;
+	border: .3em solid #FFF;
+	width: 80%;
+	margin: 1em auto;
+	color: #FFF;
+	font-size: 1.5em;
+	padding: 1.5em;
+}
+
+/*flex items*/
+.table-container {
+	flex-basis: 330px;
+}
+
+.game-info {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.recap {
+	flex-grow: 1;
+	box-shadow: inset 0 0 16px #000000;
+	background: #4f4b32;
+	text-align: center;
+}
+
+/*---------*/
+.score-table {
+	width: 100%;
+	position: relative;
+}
+
+.home td, .away td, th {
+	padding: 0 .5em;
+	box-shadow: inset 0 0 16px #000000;
+	background: #4f4b32;
+}
+
+thead, tr {
+	margin: 0 1em;
+}
+
+.score {
+	text-align: center;
+	padding: 0 .5em;
+	width: 50px;
+}
+
+.pitcher {
+	padding: 1.5em 0;
+}
+
+.pitcher a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.game-info div {
+	box-shadow: inset 0 0 16px #000000;
+	background: #4f4b32;
+}
+
+.button {
+	padding: 1.5em 0;
+
+}
+
+.button a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
