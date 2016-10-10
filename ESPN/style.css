@@ -26,6 +26,26 @@ body {
 }
 
 /*----------scoreboard-----------*/
+@media only screen and (max-width: 830px)  {
+	.game-info {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 650px)  {
+	.recap {
+		display: none;
+	}
+
+	.table-container {
+		flex-grow:1;
+	}
+
+	.header {
+		font-size: 3.5em;
+	}
+
+}
 
 .scoreboard-content {
 	height: 65px;
@@ -124,7 +144,7 @@ body {
 	width: 80%;
 	margin: 1em auto;
 	color: #FFF;
-	font-size: 1.5em;
+	font-size: 1em;
 	padding: 1.5em;
 }
 
@@ -168,7 +188,7 @@ thead, tr {
 }
 
 .pitcher {
-	padding: 1.5em 0;
+	padding: 2.25em 0;
 }
 
 .pitcher a {
@@ -182,7 +202,7 @@ thead, tr {
 }
 
 .button {
-	padding: 1.5em 0;
+	padding: 2em 0;
 
 }
 
