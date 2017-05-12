@@ -7,18 +7,23 @@ $(document).ready(function() {
     columnWidth: 160
   });
   $('.fa-chevron-down').on('click', function() {
-    $(document).scrollTo($('#projects'), {duration: 1200});
+    $(document).scrollTo($('#about'), {duration: 1200});
   })
 });
 
 // Add pulse tag to projectsHeader when user scrolls to section
 $(window).scroll(function() {
-  var hT = $('#projects').offset().top,
+  const aboutHT    = $('#about').offset().top,
+      projectsHT = $('#projects').offset().top,
       wS = $(this).scrollTop();
-  if(wS === hT){
-      $('#projectsHeader').addClass('animated');
-      $('#projectsHeader').addClass('pulse');
+  if(wS === aboutHT){
+      $('#aboutHeader').addClass('animated');
+      $('#aboutHeader').addClass('pulse');
     }
+  if(wS === projectsHT) {
+    $('#projectsHeader').addClass('animated');
+    $('#projectsHeader').addClass('pulse');
+  }
 })
 
 // initialize masonry

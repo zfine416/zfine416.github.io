@@ -1,16 +1,19 @@
 #about {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
   background: #FEDC3D;
+  overflow: auto;
 }
 
 #about img {
-  width: 100%;
+  width: 50%;
+  min-width: 330px;
+  float: left;
 }
 
-aside > p {
+#about p {
   font-family: 'Raleway', cursive;
-  width: 75%;
+  padding-left: 4px;
   margin: 0 auto;
   font-size: 18px;
 }
