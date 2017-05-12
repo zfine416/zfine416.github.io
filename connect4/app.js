@@ -24,6 +24,7 @@ const board = document.getElementById('board');
 const connectFour = {
   gameState: {
     currentPlayer: 'player1',
+    previousPlayer: 'player2',
     moveCount: 0,
     inProgress: true,
   },
@@ -35,6 +36,7 @@ const connectFour = {
     if(this.gameState.inProgress) {
       for(let i = cols.length - 1; i >= 0; i--) {
         if(cols[i].classList[1] !== 'taken') {
+          console.log('add class')
           cols[i].classList.add('taken', this.gameState.currentPlayer);
           this.gameState.lastMove = cols[i];
           this.gameState.moveCount++;
@@ -43,18 +45,46 @@ const connectFour = {
       }
     }
     this.gameState.currentPlayer = (this.gameState.currentPlayer === 'player1') ? 'player2' : 'player1';
+    this.gameState.previousPlayer = (this.gameState.previousPlayer === 'player2') ? 'player1' : 'player2';
   },
   checkWinner: function() {
-    this.gameState.inProgress = (this.verticalWin() || this.horizontalWin() || this.diagonalWin()) ? false : true;
+    this.gameState.inProgress = (this.verticalWin() || this.horizontalWin() || this.diagonalWin()) ? true : false;
   },
   verticalWin: function() {
-    debugger;
+    // debugger;
+    let count = 0;
+    const col = document.querySelectorAll('.' + this.gameState.lastMove.classList[0]);
+    for(let i = col.length - 1; i >= 0; i--) {
+      if(col[i].classList[2] ===  this.gameState.previousPlayer) {
+        count++;
+      } else {
+        count = 0;
+      }
+      if(count === 4) {
+        setTimeout(() => alert('winner!'), 50);
+        return false;
+      }
+    }
+    return true;
   },
   horizontalWin: function() {
-    debugger;
+    let count = 0;
+    const row = this.gameState.lastMove.parentNode.children;
+    for(let i = row.length - 1; i >= 0; i--) {
+      if(row[i].classList[2] ===  this.gameState.previousPlayer) {
+        count++;
+      } else {
+        count = 0;
+      }
+      if(count === 4) {
+        setTimeout(() => alert('winner!'), 50);
+        return false;
+      }
+    }
+    return true;
   },
   diagonalWin: function() {
-    debugger;
+    // debugger;
   }
 }
 

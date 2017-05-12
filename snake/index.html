@@ -37,9 +37,9 @@ var grid = {
 		this.height = r;
 
 		this._grid = [];
-		for(var x=0; x<c; x++){
+		for(var x = 0; x < c; x++){
 			this._grid.push([]);
-			for(var y=0; y < r; y++){
+			for(var y = 0; y < r; y++){
 				this._grid[x].push(d);
 			}
 		}
@@ -77,8 +77,8 @@ var snake = {
 
 function setFood(){
 	var empty = [];
-	for(var x=0; x<grid.width; x++){
-		for(var y=0; y<grid.height; y++){
+	for(var x = 0; x < grid.width; x++){
+		for(var y = 0; y < grid.height; y++){
 			if(grid.get(x,y)===EMPTY){
 				empty.push({x:x, y:y});
 

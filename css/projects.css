@@ -1,0 +1,42 @@
+@import url('masonry-effects.css');
+
+#projects {
+  background: rgb(255, 236, 219);
+  height: 100%;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid-item, .grid-item--width2, .grid-item--width3,.grid-item--width4 {
+  width: 320px;
+  height: 240px;
+  margin: 5px 0;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 360px) {
+  .grid-item {
+    width: 380px;
+    height: 350px;
+    float: left;
+    border-radius: 12px;
+  }
+
+  .grid-item--width2 { width: 320px; }
+  .grid-item--width3 { width: 480px; }
+  .grid-item--width4 { width: 630px; }
+  .grid-item--height2 { height: 400px; }
+  .grid-item--height3 { height: 300px; }
+  /*.
+  .grid-item--height3 { height: 260px; }
+  .grid-item--height4 { height: 360px; }*/
+
+}
