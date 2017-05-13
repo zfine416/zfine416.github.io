@@ -1,0 +1,39 @@
+#about {
+  width: 100vw;
+  background: #FEDC3D;
+  overflow: auto;
+}
+
+#about > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#about img {
+  width: 350px;
+  height: 260px;
+}
+
+#about p {
+  font-family: 'Raleway', cursive;
+  font-size: 18px;
+  flex-basis: 90%;
+}
+
+@media (min-width: 400px) {
+  #about img {
+    width: 560px;
+    min-width: 330px;
+    height: 370px;
+    padding: 0 12px;
+  }
+}
+
+@media (min-width: 940px) {
+  #about p {
+    font-family: 'Raleway', cursive;
+    font-size: 18px;
+    flex-basis: 40%;
+  }
+}

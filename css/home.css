@@ -1,0 +1,54 @@
+@import url("flicker.css");
+
+#home {
+    background: #000;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 1em;
+    padding: .5em;
+    text-shadow: 1px 1px #FFF;
+}
+
+#home h1:first-child {
+    font-size: 1.8em;
+}
+
+.fa-chevron-down {
+    margin: 0 auto;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fa-chevron-down:before {
+    -webkit-animation: flicker 3s linear infinite;
+    animation: flicker 3s linear infinite;
+}
+
+.fa-5x {
+    font-size: 4em;
+    text-align: center;
+    margin-left: 50%;
+}
+
+/*This applies from 600px onwards*/
+@media (min-width: 550px) {
+    #home div > h1 {
+        font-size: 2em;
+        padding: .5em;
+        text-shadow: 1px 1px #FFF;
+    }
+
+    #home div > h1:first-child {
+        font-size: 3.2em;
+    }
+
+    .fa-5x {
+        font-size: 5em;
+        text-align: center;
+    }
+}
+
