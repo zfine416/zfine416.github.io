@@ -3,8 +3,8 @@ $(document).ready(function() {
   // initialize masonry
   $('.grid').masonry({
     // options
-    itemSelector: '.grid-item',
-    columnWidth: 160
+    itemSelector: 'img',
+    columnWidth: 20
   });
   $('.fa-chevron-down').on('click', function() {
     $(document).scrollTo($('#about'), {duration: 1200});
@@ -26,12 +26,6 @@ $(window).scroll(function() {
   }
 })
 
-// initialize masonry
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 300
-});
 
 
 

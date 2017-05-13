@@ -14,6 +14,9 @@ div#masonry img {
 div#masonry:hover img { opacity: 0.3; }
 div#masonry:hover img:hover { opacity: 1; } 
 
+#masonry > a {
+  width: 100%;
+}
 /* fallback for earlier versions of Firefox */
 
 @supports not (flex-wrap: wrap) {
