@@ -7,7 +7,7 @@ div#masonry {
   font-size: 0;  
 }
 div#masonry img {  
-  width: 50%;
+  width: 100%;
   transition: .8s opacity;
 } 
 
@@ -22,4 +22,11 @@ div#masonry:hover img:hover { opacity: 1; }
   display: inline-block;
   vertical-align: top;
   }
+}
+
+@media (min-width: 400px) {
+  div#masonry img {  
+    width: 50%;
+    transition: .8s opacity;
+  } 
 }
