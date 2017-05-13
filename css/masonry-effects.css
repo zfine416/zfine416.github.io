@@ -24,7 +24,7 @@ div#masonry:hover img:hover { opacity: 1; }
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 640px) {
   div#masonry img {  
     width: 50%;
     transition: .8s opacity;
