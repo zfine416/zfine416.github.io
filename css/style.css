@@ -10,7 +10,7 @@ body {
   font-family: 'Monoton', cursive;
 }
 
-section {
+#home {
   height: 100vh;
   width: 100vw;
 }
