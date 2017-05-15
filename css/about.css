@@ -15,7 +15,7 @@
   height: 240px;
 }
 
-#about p {
+#about li {
   font-family: 'Raleway', cursive;
   font-size: 18px;
   flex-basis: 90%;
