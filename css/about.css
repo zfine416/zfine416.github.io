@@ -1,5 +1,6 @@
 #about {
   width: 100vw;
+  height: 100%;
   background: #FEDC3D;
   overflow: auto;
 }
@@ -18,8 +19,14 @@
 #about li {
   font-family: 'Raleway', cursive;
   font-size: 18px;
+  margin: 16px 0;
+}
+
+#about div:last-of-type  {
   flex-basis: 90%;
 }
+
+
 
 @media (min-width: 400px) {
   #about img {
@@ -35,5 +42,14 @@
     font-family: 'Raleway', cursive;
     font-size: 18px;
     flex-basis: 40%;
+  }
+  #about div:last-of-type {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1120px) {
+  #about {
+    height: 100vh;
   }
 }
