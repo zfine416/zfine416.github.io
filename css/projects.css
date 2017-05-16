@@ -2,10 +2,42 @@
 
 #projects {
   overflow: auto;
-  /*height: 100%;*/
   background: #ffecdb;
 }
 
-@media (min-width: 360px) {
+#projects a {
+  width: 100%;
+  position: relative;
+}
 
+#projects a:hover .overlay {
+  opacity: .85;
+}
+
+#projects img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 660px) {
+  #projects a {
+    width: 50%;
+    position: relative;
+  }
 }

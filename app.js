@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	
   // initialize masonry
-  $('.grid').masonry({
-    // options
-    itemSelector: 'img',
-    columnWidth: 20
-  });
+  // $('.grid').masonry({
+  //   // options
+  //   itemSelector: 'img',
+  //   columnWidth: 20
+  // });
   $('.fa-chevron-down').on('click', function() {
     $(document).scrollTo($('#about'), {duration: 1200});
   })
