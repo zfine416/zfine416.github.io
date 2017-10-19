@@ -1,18 +1,23 @@
 @import url("reset.css");
+@import url("navbar.css");
 @import url("home.css");
 @import url("projects.css");
 @import url("about.css");
 @import url("footer.css");
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: 'Monoton', cursive;
+  font-family: 'Arimo', sans-serif;
 }
 
 #home {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
