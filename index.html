@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section id="home">
-        <nav>
-            <ul>
-                <li id="name">Zachary</br>Fine</li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="mobile-nav">
+        <!-- <i class="mobile-nav fa fa-bars fa-4x" aria-hidden="true"></i> -->
+            <div class="overlay-navigation">
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#" >Home</a></li>
+                        <li><a href="#" >About</a></li>
+                        <li><a href="#" >Skills</a></li>
+                        <li><a href="#" >Works</a></li>
+                        <li><a href="#" >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section class="home">
+                <div class="open-overlay">
+                    <span class="bar-top"></span>
+                    <span class="bar-middle"></span>
+                    <span class="bar-bottom"></span>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="main">
+        <h1>Zachary Fine</h1>
+        <h4>Front-End Developer | New York, NY</h4>
+        <h4>Making the Internet a bit more awesome!</h4>
     </section>
     <section id="about">
-        
+
     </section>
     <section id="projects">
-    </section> 
+    </section>
     <footer>
         <div>
             <a href="https://www.linkedin.com/in/zacharyfine/" class="linkedin button-big">
@@ -39,7 +60,7 @@
             </a>
         </div>
         <div class="copyright">Zachary Fine 2017</div>
-    </footer>       
+    </footer>
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -50,4 +71,5 @@
     <!--Main JS File-->
     <script src="app.js"></script>
 </body>
+
 </html>
