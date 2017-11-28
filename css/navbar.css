@@ -29,11 +29,12 @@ nav ul {
 
 nav ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
 nav ul li {
-  flex-basis: 20%;
+  flex-basis: 25%;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -200,12 +201,12 @@ Animation keyframes
 
 @keyframes slide-in-nav-item {
   from {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
   }
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
   }
 }
 
@@ -236,7 +237,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #FFF;
   }
 }
 
@@ -256,7 +257,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #FFF;
   }
 }
 
@@ -268,13 +269,13 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #29363B;
+    background-color: #FFF;
   }
 }
 
 @keyframes animate-out-top-bar {
   0% {
-    background-color: #29363B
+    background-color: #FFF
   }
   50% {
     -webkit-transform: translateY(9px);
@@ -283,7 +284,7 @@ Animation keyframes
   80% {
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
-    background-color: #29363B
+    background-color: #FFF
   }
   100% {
     -webkit-transform: translateY(0);
@@ -294,7 +295,7 @@ Animation keyframes
 
 @keyframes animate-out-bottom-bar {
   0% {
-    background-color: #29363B
+    background-color: #FFF
   }
   50% {
     -webkit-transform: translateY(-9px);
@@ -303,7 +304,7 @@ Animation keyframes
   80% {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    background-color: #29363B;
+    background-color: #FFF;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -314,10 +315,10 @@ Animation keyframes
 
 @keyframes animate-out-middle-bar {
   0% {
-    background-color: #29363B
+    background-color: #FFF
   }
   80% {
-    background-color: #29363B;
+    background-color: #FFF;
   }
   100% {
     background-color: #fff;
