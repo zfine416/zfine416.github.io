@@ -5,11 +5,22 @@
   width: 100vw;
   background: #EC576B;
   font-family: 'Lato', sans-serif;
-  /* min-height: 960px; */
+  color: #FFF;
 }
 
 #about > h1 {
-  color: #FFF;
   font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding: 66px 0;
+}
+
+#about > ul {
+  width: 74%;
+  margin: 0 auto;
+}
+
+#about > ul > li {
+  padding: 4px 0;
 }
 /* ----------- end ------------- */

@@ -155,7 +155,7 @@ hamburger
 .open-overlay {
   position: fixed;
   right: 5rem;
-  top: 3.2rem;
+  top: 2rem;
   z-index: 100;
   width: 34px;
   display: block;
