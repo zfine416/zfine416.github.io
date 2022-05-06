@@ -1,18 +1,14 @@
-@import url("reset.css");
-@import url("home.css");
-@import url("projects.css");
-@import url("about.css");
-@import url("footer.css");
-@import url('https://fonts.googleapis.com/css?family=Monoton');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
-  font-family: 'Monoton', cursive;
+  font-family: 'Playfair Display', serif;
 }
 
 #home {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
+  background-color: #e34f55;
+  color: #FFF;
 }
 
 .header {
@@ -33,23 +29,8 @@ body {
   flex-direction: column;
 }
 
-.spacer{
-  height: 4em;
-  width: 4em;
-}
-
-.peach {
-  color: #FEA680;
-}
-
-.azure {
-  color: #01ABAA;
-}
-
-.butter {
-  color: #FEDC3D;
-}
-
-/*This applies from 600px onwards*/
-@media (min-width: 600px) {
+@media (max-width: 767.98px) {
+  .mx-300 {
+    max-width: 300px !important;
+  }
 }
