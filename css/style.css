@@ -7,7 +7,7 @@ body {
 #home {
   height: 80vh;
   width: 100vw;
-  background-color: #e34f55;
+  background: linear-gradient(69deg, rgba(227,79,85,1) 0%, rgba(227,79,85,1) 90%, rgba(255,255,255,1) 100%);;
   color: #FFF;
 }
 
