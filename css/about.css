@@ -1,6 +1,6 @@
 #about {
   padding: 6rem 2rem;
-  background: #0f1520;
+  background: #0e1b13;
   border-top: 1px solid var(--border);
 }
 
@@ -45,7 +45,7 @@
 .skill-tag {
   font-size: 0.78rem;
   color: var(--accent);
-  border: 1px solid rgba(254, 166, 128, 0.4);
+  border: 1px solid rgba(77, 184, 150, 0.4);
   border-radius: 4px;
   padding: 0.25rem 0.65rem;
   font-family: var(--font-body);
