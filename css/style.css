@@ -1,55 +1,97 @@
 @import url("reset.css");
+@import url("navbar.css");
 @import url("home.css");
-@import url("projects.css");
 @import url("about.css");
+@import url("projects.css");
 @import url("footer.css");
-@import url('https://fonts.googleapis.com/css?family=Monoton');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #fea680;
+  --border: #21262d;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Monoton', cursive;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
-#home {
-  height: 100vh;
-  width: 100vw;
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  display: inline-block;
 }
 
-.header {
-  font-size: 2.6em;
+.section-title::after {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 0.5rem;
+}
+
+.section-title.centered {
+  display: block;
   text-align: center;
-  padding: 1em;
 }
 
-.flex-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
+.section-title.centered::after {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.flex-center {
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+/* Resume nav link */
+.resume-link {
+  border: 1px solid var(--accent) !important;
+  color: var(--accent) !important;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease !important;
 }
 
-.spacer{
-  height: 4em;
-  width: 4em;
+.resume-link:hover {
+  background: var(--accent);
+  color: var(--bg) !important;
 }
 
-.peach {
-  color: #FEA680;
+/* Scroll-triggered fade-in */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.azure {
-  color: #01ABAA;
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
-.butter {
-  color: #FEDC3D;
-}
-
-/*This applies from 600px onwards*/
-@media (min-width: 600px) {
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

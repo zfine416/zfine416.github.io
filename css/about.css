@@ -1,55 +1,53 @@
 #about {
-  width: 100vw;
-  height: 100%;
-  background: #FEDC3D;
-  overflow: auto;
+  padding: 6rem 2rem;
+  background: #0f1520;
+  border-top: 1px solid var(--border);
 }
 
-#about > div {
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  gap: 4rem;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
-#about img {
-  width: 320px;
+.about-image img {
+  width: 220px;
   height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  filter: grayscale(15%);
+  display: block;
 }
 
-#about li {
-  font-family: 'Raleway', cursive;
-  font-size: 18px;
-  margin: 16px 0;
+.about-text {
+  flex: 1;
+  min-width: 280px;
 }
 
-#about div:last-of-type  {
-  flex-basis: 90%;
+.about-text p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+  line-height: 1.8;
 }
 
-
-
-@media (min-width: 400px) {
-  #about img {
-    width: 560px;
-    min-width: 330px;
-    height: 370px;
-    padding: 0 12px;
-  }
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
 }
 
-@media (min-width: 940px) {
-  #about p {
-    font-family: 'Raleway', cursive;
-    font-size: 18px;
-    flex-basis: 40%;
-  }
-  #about div:last-of-type {
-    flex-basis: 50%;
-  }
-}
-
-@media (min-width: 1120px) {
-  #about {
-    height: 100vh;
-  }
+.skill-tag {
+  font-size: 0.78rem;
+  color: var(--accent);
+  border: 1px solid rgba(254, 166, 128, 0.4);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
 }

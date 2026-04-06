@@ -4,94 +4,281 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zachary Fine - Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Primary Meta -->
+    <title>Zachary Fine – Engineering Manager | Brooklyn, NY</title>
+    <meta name="description" content="Engineering Manager with 8+ years leading teams at Spring Health, Freshly, and The New York Times. Brooklyn, NY. Rails · React · React Native.">
+    <meta name="author" content="Zachary Fine">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zachary-fine.com/">
+
+    <!-- Open Graph (LinkedIn, Slack, etc.) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://zachary-fine.com/">
+    <meta property="og:title" content="Zachary Fine – Engineering Manager | Brooklyn, NY">
+    <meta property="og:description" content="Engineering Manager with 8+ years leading teams at Spring Health, Freshly, and The New York Times. Brooklyn, NY. Rails · React · React Native.">
+    <meta property="og:image" content="https://zachary-fine.com/images/zfine.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Zachary Fine">
+    <meta property="profile:first_name" content="Zachary">
+    <meta property="profile:last_name" content="Fine">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Zachary Fine – Engineering Manager | Brooklyn, NY">
+    <meta name="twitter:description" content="Engineering Manager with 8+ years leading teams at Spring Health, Freshly, and The New York Times. Brooklyn, NY. Rails · React · React Native.">
+    <meta name="twitter:image" content="https://zachary-fine.com/images/zfine.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zachary Fine",
+      "jobTitle": "Engineering Manager",
+      "url": "https://zachary-fine.com",
+      "image": "https://zachary-fine.com/images/zfine.jpg",
+      "email": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Triangle Services"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Indiana University",
+        "description": "B.S. Informatics & Computing, 2014"
+      },
+      "knowsAbout": [
+        "Engineering Management",
+        "Ruby on Rails",
+        "React",
+        "React Native",
+        "JavaScript",
+        "PostgreSQL",
+        "GraphQL",
+        "AWS",
+        "GCP",
+        "Kubernetes",
+        "Datadog",
+        "Agile",
+        "Scrum"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/zacharyfine/",
+        "https://github.com/zfine416"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <section id="home">
-        <div class="flex-container flex-center">
-            <div class="spacer"></div>
-            <div class="main-container">
-                <h1 class="peach animated fadeIn">Zachary Fine</h1>
-                <h1 class="azure animated fadeIn">Web Developer | Educator</h1> 
-                <h1 class="butter animated fadeIn">React | Node | Ruby on Rails</h1>
-            </div>
-            <i class="fa fa-chevron-down fa-5x peach" aria-hidden="true"></i>
-        </div>
-    </section>
-    <section id="about">
-        <h1 id="aboutHeader" class="header">About Me</h1>
-        <div>
-            <div>
-                <img src="images/zfine.jpg" alt="Zachary Fine the Freelance Web Developer">
-            </div>
-             <div>
-                <ul>
-                    <li>I am a Full-Stack Web Developer residing in Brooklyn, NY</li>
-                    <li>As a web developer and a problem solver, I'm passionate about what I do and I believe that anything is possible!!!</li>
-                    <li>I love a good coding challenge, on codewars my current <u><b><a href="http://www.codewars.com/users/zfine416">score is a 750</a></b></u>... no big deal</li>
-                    <li>I've taught students with no programming experience, how to build awesome apps with React, Node and Ruby on Rails</li>
-                    <li>I played <u><b><a href="http://www.eliteprospects.com/player.php?player=146248">college hockey at Indiana University</a></b></u></li>
-                    <li>I manage my dog's <u><b><a href="https://www.instagram.com/thegoldenkingkelso/">Instagram ... he's famous</a></b></u></li>
-                    <li>I really like exclamation marks!!!!</li>
-                </ul> 
-             </div>
-        </div>
-    </section>
-    <section id="projects">
-        <h1 id="projectsHeader" class="header">Projects</h1>
-        <div class="flex-container wrap">
-            <a href="https://dogitz.herokuapp.com/">
-                <img src="images/dogitz-show.png" alt="Dogitz">
-                <div class="overlay">
-                    <div class="text"></div>
-                </div>
-            </a>
-	        <a href="https://www.nytimes.com/interactive/2018/04/24/us/elections/results-arizona-house-special-election.html">
-                <img height="100%" src="images/nytimes-election.png" alt="The New York Times">
-                <div class="overlay">
-                    <div class="text"></div>
-                </div>
-            </a>
-	        <a href="https://weather-charts-react.herokuapp.com/#/">
-                <img src="images/weather-charts.png" alt="Weather Charts React App">
-                <div class="overlay">
-                    <div class="text"></div>
-                </div>
-            </a>
-            <a href="/pong/index.html">
-                <img src="images/icehockey.png" alt="JavaScript Ice Hockey Pong">
-                <div class="overlay">
-                    <div class="text"></div>
-                </div>
-            </a>
-        </div>
-    </section> 
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/zacharyfine/" class="linkedin button-big">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/zack.fine" class="facebook button-big">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://github.com/zfine416" class="github button-big">
-                <i class="fa fa-github"></i>
-            </a>
-        </div>
-        <div class="copyright">Zachary Fine 2017</div>
-    </footer>       
+    <nav id="navbar">
+        <div class="nav-brand"><span>Z</span>F</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.html" class="resume-link">Resume</a></li>
+        </ul>
+    </nav>
 
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Scroll-To-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <!--Masonry-->
-    <script src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
-    <!--Main JS File-->
+    <section id="home">
+        <!-- Tennis court outline — personal touch, very faint -->
+        <svg class="hero-court" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 358" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <!-- Outer boundary -->
+            <rect x="1" y="1" width="778" height="356" fill="none" stroke="currentColor" stroke-width="2"/>
+            <!-- Net (vertical, at center) -->
+            <line x1="390" y1="1" x2="390" y2="357" stroke="currentColor" stroke-width="3"/>
+            <!-- Service lines (vertical) -->
+            <line x1="180" y1="1" x2="180" y2="357" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="600" y1="1" x2="600" y2="357" stroke="currentColor" stroke-width="1.5"/>
+            <!-- Center service line (horizontal, between service lines) -->
+            <line x1="180" y1="179" x2="600" y2="179" stroke="currentColor" stroke-width="1.5"/>
+            <!-- Center marks at each baseline -->
+            <line x1="1" y1="179" x2="16" y2="179" stroke="currentColor" stroke-width="2"/>
+            <line x1="764" y1="179" x2="779" y2="179" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Zachary Fine</h1>
+            <h2 class="hero-title">Engineering Manager</h2>
+            <p class="hero-tagline">Building teams and products that ship — reliably, at scale.</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+            <p class="hero-status">
+                <span class="status-dot"></span>
+                Open to engineering leadership roles
+            </p>
+            <div class="hero-companies">
+                <p class="hero-companies-label">Previously at</p>
+                <div class="hero-companies-logos">
+                    <img src="images/logo-nytimes.svg" alt="The New York Times" class="hero-company-logo">
+                    <img src="images/logo-freshly.svg" alt="Freshly" class="hero-company-logo">
+                    <img src="images/logo-springhealth.svg" alt="Spring Health" class="hero-company-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container fade-in">
+            <div class="about-image">
+                <img src="images/zfine.jpg" alt="Zachary Fine">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>Engineering manager with 8+ years delivering software at scale. I've led teams of 6–7 engineers at Spring Health and Freshly, shipping EHR systems and e-commerce platforms on time, with the bar high. At Triangle Services, I solo-built and launched a production platform now running across multiple U.S. airports.</p>
+                <p>I started as a frontend developer at the New York Times and have grown into a leader who still writes code. I care about developer experience, clean systems, and teams that hold each other accountable.</p>
+                <p>Outside of work: I played college hockey at Indiana University, and these days you'll find me on the tennis court — currently a 6.5 UTR and always working to push it higher. My dog also has more Instagram followers than me.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Ruby on Rails</span>
+                    <span class="skill-tag">React / React Native</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">AWS / GCP</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Datadog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="experience-container">
+            <h2 class="section-title centered">Experience</h2>
+            <div class="experience-list">
+
+                <div class="exp-card fade-in">
+                    <div class="exp-meta">
+                        <span class="exp-date">May 2024 – Present</span>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header">
+                            <div class="exp-header-text">
+                                <h3 class="exp-role">Technical Program Manager</h3>
+                                <span class="exp-company">Triangle Services</span>
+                            </div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Solo-built and launched the GMR platform (Rails + React Native) deployed across multiple U.S. airports</li>
+                            <li>Owns full product lifecycle — from architecture decisions to in-person training and adoption</li>
+                            <li>Set up Datadog telemetry for end-to-end observability across the platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-card fade-in">
+                    <div class="exp-meta">
+                        <span class="exp-date">Aug 2022 – Feb 2024</span>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header">
+                            <div class="exp-header-text">
+                                <h3 class="exp-role">Engineering Manager</h3>
+                                <span class="exp-company">Spring Health</span>
+                            </div>
+                            <img src="images/logo-springhealth.svg" alt="Spring Health" class="exp-logo">
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Led 7 engineers to deliver an EHR rollout for 600+ providers — on time, zero critical bugs</li>
+                            <li>Maintained sub-10-minute on-call SLA and launched provider scheduling features</li>
+                            <li>Transitioned team from Kanban to Scrum, improving delivery predictability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-card fade-in">
+                    <div class="exp-meta">
+                        <span class="exp-date">Apr 2019 – Aug 2022</span>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header">
+                            <div class="exp-header-text">
+                                <h3 class="exp-role">Engineering Manager / Lead SWE</h3>
+                                <span class="exp-company">Freshly</span>
+                            </div>
+                            <img src="images/logo-freshly.svg" alt="Freshly" class="exp-logo">
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Managed 6 engineers; eliminated N+1 queries and reduced funnel load time by ~2 seconds</li>
+                            <li>Created an engineering wiki that improved onboarding and cross-team knowledge sharing</li>
+                            <li>Built and shipped features across a Rails + React stack</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-card fade-in">
+                    <div class="exp-meta">
+                        <span class="exp-date">Jul 2017 – Jan 2019</span>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header">
+                            <div class="exp-header-text">
+                                <h3 class="exp-role">Frontend Developer</h3>
+                                <span class="exp-company">The New York Times</span>
+                            </div>
+                            <img src="images/logo-nytimes.svg" alt="The New York Times" class="exp-logo">
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Built internal React applications and A/B testing assets for editorial and product teams</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-card fade-in">
+                    <div class="exp-meta">
+                        <span class="exp-date">Sep 2015 – May 2017</span>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-header">
+                            <div class="exp-header-text">
+                                <h3 class="exp-role">Front End Engineer & Teaching Assistant</h3>
+                                <span class="exp-company">General Assembly</span>
+                            </div>
+                            <img src="images/logo-ga.png" alt="General Assembly" class="exp-logo exp-logo--tall">
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Engineered internal email-building tools, reducing build times by 2+ hours</li>
+                            <li>Served as Teaching Assistant for the Web Development Immersive — a 12-week intensive full-stack bootcamp</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="footer-tagline">Open to new opportunities. Let's connect.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/zacharyfine/" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/zfine416" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">© Zachary Fine 2025</div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

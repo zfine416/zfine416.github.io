@@ -1,43 +1,127 @@
-@import url('masonry-effects.css');
-
-#projects {
-  overflow: auto;
-  background: #ffecdb;
+#experience {
+  padding: 6rem 2rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
 }
 
-#projects a {
-  width: 100%;
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.exp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+  display: flex;
+  gap: 2rem;
+  transition: border-color 0.2s ease;
+}
+
+.exp-card:hover {
+  border-color: rgba(254, 166, 128, 0.5);
+}
+
+.exp-meta {
+  flex-shrink: 0;
+  width: 150px;
+  padding-top: 0.2rem;
+}
+
+.exp-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  display: block;
+}
+
+
+.exp-body {
+  flex: 1;
+}
+
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.exp-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.exp-role {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.exp-company {
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-family: var(--font-body);
+}
+
+.exp-logo {
+  height: 22px;
+  width: auto;
+  max-width: 110px;
+  filter: brightness(0) invert(1);
+  opacity: 0.55;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.exp-logo--tall {
+  height: 44px;
+  max-width: 90px;
+}
+
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-bullets li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding-left: 1.25rem;
   position: relative;
+  margin-bottom: 0.45rem;
+  line-height: 1.65;
 }
 
-#projects a:hover .overlay {
-  opacity: .6;
-}
-
-#projects img {
-  width: 100%;
-}
-
-.overlay {
+.exp-bullets li::before {
+  content: '▸';
   position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 0.2rem;
 }
 
-.wrap {
-  flex-wrap: wrap;
-}
+@media (max-width: 600px) {
+  .exp-card {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem;
+  }
 
-@media (min-width: 660px) {
-  #projects a {
-    width: 50%;
-    position: relative;
+  .exp-meta {
+    width: auto;
   }
 }
