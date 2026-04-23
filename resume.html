@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zachary Fine — Engineering Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 10pt;
+      color: #1a1a1a;
+      line-height: 1.4;
+      background: #f0f0f0;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0.3in auto;
+      padding: 0.45in 0.55in;
+      background: white;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 11px;
+      border-bottom: 2px solid #1a7a6a;
+    }
+
+    h1 {
+      font-size: 24pt;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 3px;
+    }
+
+    .header-role {
+      font-size: 9.5pt;
+      font-weight: 500;
+      color: #1a7a6a;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .contact-line {
+      font-size: 8.5pt;
+      color: #555;
+    }
+
+    .contact-line a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      color: #1a7a6a;
+    }
+
+    .sep {
+      margin: 0 5px;
+      color: #bbb;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #1a7a6a;
+      border-bottom: 1px solid #1a7a6a;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Summary ── */
+    .summary p {
+      font-size: 9.5pt;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* ── Jobs ── */
+    .job {
+      margin-bottom: 10px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .job-date {
+      font-size: 8.5pt;
+      color: #666;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+
+    .job-company {
+      font-size: 9pt;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 9.5pt;
+      color: #333;
+      padding-left: 13px;
+      position: relative;
+      margin-bottom: 3px;
+      line-height: 1.45;
+    }
+
+    li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #1a7a6a;
+      font-size: 8pt;
+      top: 1px;
+    }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 12px;
+    }
+
+    .skill {
+      font-size: 9pt;
+      color: #333;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .skill::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #1a7a6a;
+      font-size: 7.5pt;
+      top: 1px;
+    }
+
+    /* ── Education ── */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 10pt;
+      font-weight: 600;
+    }
+
+    .edu-date {
+      font-size: 8.5pt;
+      color: #666;
+    }
+
+    .edu-school {
+      font-size: 9pt;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body {
+        background: white;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 0.45in 0.55in;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header>
+      <h1>Zachary Fine</h1>
+      <div class="header-role">Engineering Manager</div>
+      <div class="contact-line">
+        <a href="mailto:zfine416@gmail.com">zfine416@gmail.com</a>
+        <span class="sep">|</span>
+        Long Island, NY
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/zacharyfine">linkedin.com/in/zacharyfine</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/zfine416">github.com/zfine416</a>
+        <span class="sep">|</span>
+        <a href="https://zachary-fine.com">zachary-fine.com</a>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section>
+      <h2>Summary</h2>
+      <p class="summary-text" style="font-size:9.5pt; color:#333; line-height:1.5;">
+        Engineering Manager with 7+ years of experience building and scaling high-performing teams, launching products end-to-end, and driving cross-functional alignment. Track record of delivering complex initiatives on time across healthcare and consumer tech. Hands-on technical background in Ruby on Rails and React with a leadership style centered on coaching, accountability, and measurable outcomes.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Technical Program Manager</span>
+          <span class="job-date">May 2024 – Present</span>
+        </div>
+        <div class="job-company">Triangle Services — Garden City, NY</div>
+        <ul>
+          <li>Designed and launched the Ground Maintenance Reporting (GMR) platform end-to-end — from requirements gathering with operations leaders to production deployment across multiple airports</li>
+          <li>Owned full product lifecycle including Rails + React Native development, integrations with flight data, payroll, accounting, and invoicing systems to replace manual workflows</li>
+          <li>Traveled to airport locations to lead in-person training for frontline staff, collect direct feedback, and drive adoption</li>
+          <li>Implemented Datadog telemetry to monitor system health, track usage patterns, and quantify operational impact</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Engineering Manager</span>
+          <span class="job-date">August 2022 – February 2024</span>
+        </div>
+        <div class="job-company">Spring Health</div>
+        <ul>
+          <li>Led a team of 7 engineers through the rollout of a new EHR system supporting 600+ healthcare providers — delivered on time with zero critical bugs at launch</li>
+          <li>Maintained sub-10-minute on-call incident response SLA post-launch, ensuring zero provider-facing downtime</li>
+          <li>Launched provider scheduling features that expanded operational accessibility across the provider network</li>
+          <li>Drove Scrum adoption from Kanban, increasing team delivery velocity and improving sprint predictability</li>
+          <li>Partnered with cross-functional stakeholders to translate product roadmap into engineering execution plans</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Engineering Manager / Lead Software Engineer</span>
+          <span class="job-date">April 2019 – August 2022</span>
+        </div>
+        <div class="job-company">Freshly — New York, NY</div>
+        <ul>
+          <li>Managed a team of 6 engineers — led weekly 1:1s, sprint planning, performance reviews, and technical hiring</li>
+          <li>Eliminated N+1 queries and implemented caching, reducing funnel page load time by ~2 seconds</li>
+          <li>Architected and built full-stack features in Ruby on Rails and React; set code quality standards through regular review</li>
+          <li>Created an engineering wiki that improved internal documentation and reduced onboarding ramp time for new hires</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Frontend Developer</span>
+          <span class="job-date">July 2017 – January 2019</span>
+        </div>
+        <div class="job-company">The New York Times — New York, NY</div>
+        <ul>
+          <li>Built internal React applications that automated editorial and operational workflows, reducing manual overhead across newsroom teams</li>
+          <li>Engineered A/B testing assets in JavaScript, HTML, and CSS to optimize reader engagement across web properties</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Ruby on Rails</div>
+        <div class="skill">React / React Native</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PostgreSQL / SQL</div>
+        <div class="skill">GraphQL</div>
+        <div class="skill">AWS / GCP</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Datadog</div>
+        <div class="skill">RSpec</div>
+        <div class="skill">System Design</div>
+        <div class="skill">Agile / Scrum</div>
+        <div class="skill">Team Scaling & Coaching</div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="edu-header">
+        <span class="edu-degree">B.S. Informatics and Computing</span>
+        <span class="edu-date">2014</span>
+      </div>
+      <div class="edu-school">Indiana University Bloomington — Bloomington, IN</div>
+    </section>
+
+  </div>
+</body>
+</html>
