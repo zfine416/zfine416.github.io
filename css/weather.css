@@ -1,0 +1,20 @@
+/* Weather below the hero (weather.js) sits behind the page content */
+.weather-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Sections go see-through so the weather shows in the gaps; cards stay solid */
+:root[data-season] #about {
+  background: color-mix(in srgb, var(--section-alt) 70%, transparent);
+}
+
+#experience {
+  background: transparent;
+}
+
+#contact {
+  background: color-mix(in srgb, var(--bg-card) 70%, transparent);
+}
