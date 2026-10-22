@@ -5,21 +5,22 @@
 }
 
 .about-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  gap: 4rem;
-  align-items: flex-start;
+  gap: 3.5rem;
+  align-items: center;
   flex-wrap: wrap;
 }
 
+/* Seasonal cartoon with a transparent background, so no frame */
+.about-image {
+  width: min(380px, 100%);
+}
+
 .about-image img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid var(--border);
-  filter: grayscale(15%);
+  width: 100%;
+  height: auto;
   display: block;
 }
 

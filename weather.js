@@ -259,7 +259,7 @@
 
   create({
     below: document.getElementById('home'),
-    surfaces: '.exp-card, .about-image img',
+    surfaces: '.exp-card',
     clear: '.about-text, .section-title, .footer-content',
     breeze: true,
     density: 0.9,

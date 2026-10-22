@@ -163,7 +163,13 @@
     <section id="about">
         <div class="about-container fade-in">
             <div class="about-image">
-                <img src="images/zfine.jpg" alt="Zachary Fine">
+                <!-- seasons.js swaps in the current season's cartoon -->
+                <img data-season-src="images/avatars/{season}.webp" width="800" height="800" alt="Cartoon of Zachary Fine"
+                     data-alt-spring="Cartoon of Zachary Fine watering a cherry blossom sapling"
+                     data-alt-summer="Cartoon of Zachary Fine playing tennis"
+                     data-alt-fall="Cartoon of Zachary Fine walking his dog through autumn leaves"
+                     data-alt-winter="Cartoon of Zachary Fine playing ice hockey">
+                <noscript><img src="images/avatars/summer.webp" width="800" height="800" alt="Cartoon of Zachary Fine playing tennis"></noscript>
             </div>
             <div class="about-text">
                 <h2 class="section-title">About Me</h2>

@@ -315,6 +315,13 @@
     fx.replaceChildren();
 
     SEASON_SETUP[season](svg, fx, [...svg.querySelectorAll('.vine')], cleanups);
+
+    // Seasonal artwork elsewhere on the page, e.g. the About avatar
+    const key = `alt${season[0].toUpperCase()}${season.slice(1)}`;
+    document.querySelectorAll('img[data-season-src]').forEach(img => {
+      img.src = img.dataset.seasonSrc.replace('{season}', season);
+      if (img.dataset[key]) img.alt = img.dataset[key];
+    });
     return season;
   }
 
