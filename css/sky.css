@@ -1,0 +1,227 @@
+/* Time-of-day sky behind the hero tree. sky.js sets the custom properties. */
+
+.sky {
+  --sun-x: 50%;
+  --sun-y: 50%;
+  --sun-color: #fff3c4;
+  --sun-size: 54px;
+  --day: 0;
+  --twilight: 0;
+  --night: 0;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Warm horizon at dawn/dusk, a faint lift in daylight, and a halo around the sun */
+.sky-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at var(--sun-x) var(--sun-y),
+      color-mix(in srgb, var(--sun-color) calc(var(--day) * 14% + var(--twilight) * 22%), transparent),
+      transparent 42%),
+    linear-gradient(to top,
+      color-mix(in srgb, #ff8a4c calc(var(--twilight) * 20%), transparent),
+      color-mix(in srgb, #c45a7a calc(var(--twilight) * 8%), transparent) 30%,
+      transparent 60%),
+    linear-gradient(to bottom,
+      color-mix(in srgb, #9cc4ff calc(var(--day) * 6%), transparent),
+      transparent 70%);
+  transition: background 1s linear;
+}
+
+.sun {
+  position: absolute;
+  left: var(--sun-x);
+  top: var(--sun-y);
+  width: var(--sun-size);
+  height: var(--sun-size);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, #fffdf2 0%, var(--sun-color) 55%, color-mix(in srgb, var(--sun-color) 60%, transparent) 100%);
+  box-shadow:
+    0 0 40px 10px color-mix(in srgb, var(--sun-color) 45%, transparent),
+    0 0 120px 40px color-mix(in srgb, var(--sun-color) 18%, transparent);
+  opacity: calc((0.35 + var(--day) * 0.35 + var(--twilight) * 0.45) * var(--sun-visible, 1));
+  transition: opacity 0.6s ease;
+  animation: sun-breathe 6s ease-in-out infinite alternate;
+}
+
+@media (max-width: 699px) {
+  .sun { width: calc(var(--sun-size) * 0.7); height: calc(var(--sun-size) * 0.7); }
+  .moon { width: 32px; height: 32px; }
+}
+
+@keyframes sun-breathe {
+  to { box-shadow:
+    0 0 48px 14px color-mix(in srgb, var(--sun-color) 50%, transparent),
+    0 0 140px 50px color-mix(in srgb, var(--sun-color) 20%, transparent); }
+}
+
+.moon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+  opacity: calc(var(--night) * 0.85);
+  filter: drop-shadow(0 0 18px rgba(220, 230, 255, 0.35));
+}
+
+.star {
+  position: absolute;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: #fff;
+  opacity: calc(var(--night) * var(--o));
+  animation: star-twinkle var(--tw) ease-in-out var(--dl) infinite alternate;
+}
+
+@keyframes star-twinkle {
+  to { opacity: calc(var(--night) * var(--o) * 0.3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sun, .star { animation: none; }
+}
+
+/* ── Visitor controls: "Time & season" button and panel ── */
+.sky-toggle {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-card) 80%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.sky-toggle:hover,
+.sky-toggle[aria-expanded="true"] {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.sky-toggle svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.sky-toggle:focus-visible,
+.sky-panel :focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sky-panel {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 4.5rem;
+  z-index: 3;
+  width: 300px;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: left;
+  transform-origin: bottom right;
+  animation: sky-panel-in 0.18s ease;
+}
+
+.sky-panel[hidden] { display: none; }
+
+@keyframes sky-panel-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+}
+
+.sky-panel-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sky-panel-label output {
+  color: var(--text);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.sky-panel input[type="range"] {
+  width: 100%;
+  margin: 0 0 0.25rem;
+  accent-color: var(--accent);
+}
+
+.sky-panel-hours {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.sky-seasons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.sky-seasons button,
+.sky-reset {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.4rem 0;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.sky-seasons button:hover { color: var(--text); }
+
+.sky-seasons button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.sky-reset {
+  width: 100%;
+  border-style: dashed;
+}
+
+.sky-reset:hover { color: var(--text); border-color: var(--accent); }
+.sky-reset:disabled { opacity: 0.45; cursor: default; }
+.sky-reset:disabled:hover { color: var(--text-muted); border-color: var(--border); }
+
+@media (max-width: 600px) {
+  .sky-toggle { right: 1rem; bottom: 1rem; }
+  .sky-panel { right: 1rem; left: 1rem; bottom: 4rem; width: auto; }
+}
