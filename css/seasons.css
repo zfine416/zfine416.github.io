@@ -1,0 +1,210 @@
+/* Seasonal hero. seasons.js sets html[data-season] from the date (or ?season=). */
+
+:root[data-season="spring"] {
+  --bg: #0e1512;
+  --bg-card: #131c17;
+  --section-alt: #111a15;
+  --text: #eef3ee;
+  --text-muted: #8fa898;
+  --accent: #f0a6c2;
+  --border: #1f2c24;
+  --branch: #7d9a80;
+  --dot: #a3e635;
+  --sky: rgba(240, 166, 194, 0.08);
+}
+
+:root[data-season="summer"] {
+  --bg: #0c1610;
+  --bg-card: #111e16;
+  --section-alt: #0e1b13;
+  --text: #e8f0e9;
+  --text-muted: #7a9e85;
+  --accent: #4db896;
+  --border: #1a2e20;
+  --branch: #4a8a5a;
+  --dot: #a3e635;
+  --sky: rgba(163, 230, 53, 0.05);
+}
+
+:root[data-season="fall"] {
+  --bg: #14100c;
+  --bg-card: #1b1611;
+  --section-alt: #17130e;
+  --text: #f3ebe0;
+  --text-muted: #a8957d;
+  --accent: #e08a3c;
+  --border: #2b2219;
+  --branch: #8a6a4c;
+  --dot: #f2b04a;
+  --sky: rgba(224, 138, 60, 0.08);
+}
+
+:root[data-season="winter"] {
+  --bg: #0b1118;
+  --bg-card: #101924;
+  --section-alt: #0d151e;
+  --text: #eaf1f8;
+  --text-muted: #8a9bb0;
+  --accent: #9cc9ff;
+  --border: #1b2735;
+  --branch: #9fb3c8;
+  --dot: #cfe8ff;
+  --sky: rgba(156, 201, 255, 0.09);
+}
+
+/* ── Palette hooks for colors the base CSS hardcodes ── */
+:root[data-season] body,
+:root[data-season] #home {
+  transition: background-color 0.6s ease;
+}
+
+:root[data-season] #home {
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, var(--sky), transparent 70%), var(--bg);
+}
+
+:root[data-season] #about { background: var(--section-alt); }
+:root[data-season] #navbar.scrolled { background: color-mix(in srgb, var(--bg) 95%, transparent); }
+:root[data-season] .nav-brand { border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+:root[data-season] .skill-tag { border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+:root[data-season] .exp-card:hover { border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+
+:root[data-season] .status-dot {
+  background: var(--dot);
+  animation-name: season-pulse-dot;
+}
+
+@keyframes season-pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 color-mix(in srgb, var(--dot) 50%, transparent); }
+  50%      { opacity: 0.75; box-shadow: 0 0 0 5px transparent; }
+}
+
+/* ── Tree ── */
+:root[data-season] .hero-vines {
+  color: var(--branch);
+  opacity: 1;
+}
+
+:root[data-season] .hero-vines .vine { opacity: 0.38; }
+:root[data-season] .hero-vines .leaf { display: none; }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Generated foliage pivots from its stem (bottom centre of its own box) */
+.f-leaf,
+.f-bloom {
+  transform-box: fill-box;
+  opacity: 0;
+  transform: rotate(var(--r)) scale(0);
+}
+
+.f-leaf {
+  transform-origin: 50% 100%;
+  animation:
+    f-grow 0.9s cubic-bezier(0.2, 0.8, 0.3, 1.25) var(--d) forwards,
+    f-sway var(--sway) ease-in-out calc(var(--d) + 0.9s) infinite alternate;
+}
+
+.f-bloom {
+  transform-origin: 50% 50%;
+  animation: f-bloom 1.4s cubic-bezier(0.2, 0.8, 0.3, 1.2) var(--d) forwards;
+}
+
+.f-leaf.dropped { visibility: hidden; }
+
+@keyframes f-grow {
+  to { opacity: var(--o); transform: rotate(var(--r)) scale(1); }
+}
+
+@keyframes f-sway {
+  from { transform: rotate(var(--r)) scale(1); }
+  to   { transform: rotate(calc(var(--r) + 7deg)) scale(1); }
+}
+
+@keyframes f-bloom {
+  0%   { opacity: 0; transform: rotate(calc(var(--r) - 90deg)) scale(0); }
+  100% { opacity: var(--o); transform: rotate(var(--r)) scale(1); }
+}
+
+/* Winter: patchy snow resting on top of each branch */
+.snowcap {
+  opacity: 0;
+  animation: snow-settle 2s ease var(--d) forwards;
+}
+
+@keyframes snow-settle {
+  to { opacity: 0.6; }
+}
+
+/* ── Weather layer (between the tree and the hero text) ── */
+.season-fx {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.season-fx canvas {
+  position: absolute;
+  inset: 0;
+}
+
+/* Falling leaves and petals: outer element falls, inner one tumbles */
+.faller {
+  position: absolute;
+  animation: faller-fall var(--dur) linear forwards;
+}
+
+.faller-tumble {
+  animation: faller-tumble var(--flut) ease-in-out infinite alternate;
+}
+
+.faller svg {
+  display: block;
+  width: var(--size);
+  height: var(--size);
+}
+
+@keyframes faller-fall {
+  0%   { opacity: 0; transform: translate(0, 0); }
+  6%   { opacity: var(--o); }
+  85%  { opacity: var(--o); }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)); }
+}
+
+@keyframes faller-tumble {
+  from { transform: translateX(calc(var(--sw) * -1)) rotate(var(--rot0)) rotateX(0deg); }
+  to   { transform: translateX(var(--sw)) rotate(var(--rot1)) rotateX(70deg); }
+}
+
+/* Summer fireflies */
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #eaff9c;
+  box-shadow: 0 0 10px 3px rgba(214, 255, 120, 0.45);
+  opacity: 0;
+  animation:
+    firefly-move var(--mv) ease-in-out var(--dl) infinite alternate,
+    firefly-blink var(--bl) ease-in-out var(--dl) infinite;
+}
+
+@keyframes firefly-move {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(var(--x1), var(--y1)); }
+  100% { transform: translate(var(--x2), var(--y2)); }
+}
+
+@keyframes firefly-blink {
+  0%, 100% { opacity: 0; }
+  45%, 60% { opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .f-leaf, .f-bloom, .snowcap { animation: none; opacity: var(--o, 0.75); transform: rotate(var(--r)) scale(1); }
+}
